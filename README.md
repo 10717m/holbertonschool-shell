@@ -1,2 +1,2 @@
-Shell, basics
-# holbertonschool-shell
+shell.basics
+#!/bin/bash
