@@ -1,4 +1,2 @@
 #!/bin/bash
- 
-FILE="/tmp/hello"
-sudo chown betty "$FILE"
+chown betty hello
