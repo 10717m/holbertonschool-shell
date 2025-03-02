@@ -1,0 +1,11 @@
+#!/bin/bash
+# Read the TSV input, skip the header line, and extract the host field
+awk 'NR > 1 {print $1}' | \
+# Count occurrences of each host
+sort | uniq -c | \
+# Sort by the count in descending order
+sort -nr | \
+# Extract the top 11 hosts
+head -n 11 | \
+# Print only the host names
+awk '{print $2}'
